@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Sistema de Autenticação</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'autenticacao/index.css' %}" />
+</head>
+<body>
+    <div class="container">
+        <h2>Bem-vindo ao Sistema</h2>
+        <p>Gerencie seu acesso com segurança</p>
+        <a href="{% url 'login' %}">Login</a>
+        <p>Não tem uma conta? <a href="{% url 'register' %}">Registre-se aqui</a></p>
+    </div>
+</body>
+</html>
